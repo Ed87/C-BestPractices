@@ -8,6 +8,15 @@ namespace BestPractices.Models
 {
     public class Actor
     {
+        public Actor()
+        {
+            Console.WriteLine("An actor is born");      
+        }
+
+        public Actor(string jobTitle) : this ()
+        {
+            JobTitle = jobTitle;
+        }
         private string jobTitle;
 
         public string JobTitle
