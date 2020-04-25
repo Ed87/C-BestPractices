@@ -8,6 +8,15 @@ namespace BestPractices.Models
 {
     public class Actor
     {
+        private string jobTitle;
+
+        public string JobTitle
+        {
+            get { return jobTitle; }
+            set { jobTitle = value; }
+        }
+
+
         /// <summary>
         /// Will return title
         /// </summary>
