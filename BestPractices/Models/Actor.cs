@@ -8,7 +8,10 @@ namespace BestPractices.Models
 {
     public class Actor
     {
-      
+        /// <summary>
+        /// Will return title
+        /// </summary>
+        /// <returns></returns>
         public string GetOccupation ()
         {
             return "Actor";
