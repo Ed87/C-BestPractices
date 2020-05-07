@@ -13,6 +13,10 @@ namespace BestPractices.Models
             Console.WriteLine("An actor is born");      
         }
 
+        /// <summary>
+        /// (this) keyword invokes default constructor 
+        /// </summary>
+        /// <returns></returns>
         public Actor(string jobTitle) : this ()
         {
             JobTitle = jobTitle;
