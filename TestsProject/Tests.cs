@@ -65,5 +65,23 @@ namespace TestsProject
             //Assert
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void TestBookActorOnSpecificDate()
+        {
+            //Arrange
+            string details = "Actor will not book if" +
+                " they cause trouble";
+            var actor = new Actor("Ed Tshuma");
+
+            var expected = "Actor Ed Tshuma is Booked on " + DateTime.Today.ToShortDateString()
+                + "." + details;
+
+            //Act
+            var result = actor.BookActor(DateTime.Today.ToShortDateString());
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
