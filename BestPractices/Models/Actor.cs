@@ -47,7 +47,7 @@ namespace BestPractices.Models
         {
             string details = "Actor will not book if" +
                 " they cause trouble";
-            return "Actor" + jobTitle + "Is Booked" + details;
+            return "Actor " + jobTitle + " is Booked" + details;
 
         }
 
