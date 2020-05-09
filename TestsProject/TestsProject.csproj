@@ -49,13 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BestPractices.Common\BestPractices.Common.csproj">
+      <Project>{c9920622-ce8a-4bef-a090-49b4e7eddee4}</Project>
+      <Name>BestPractices.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BestPractices\BestPractices.csproj">
       <Project>{af4d2efb-87ad-4176-a859-116ceda05876}</Project>
       <Name>BestPractices</Name>

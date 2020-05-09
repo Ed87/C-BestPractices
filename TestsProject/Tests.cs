@@ -1,4 +1,5 @@
 ﻿using System;
+using BestPractices.Common;
 using BestPractices.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -33,6 +34,19 @@ namespace TestsProject
 
             //Assert
             Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void TestNotifyTalent()
+        {
+            //Arrange
+            var expect = "Notifying talent : Ed";
+
+            //Act
+            string result = NotificationService.NotifyTalent("Ed");
+
+            //Assert
+            Assert.AreEqual(expect, result);
         }
     }
 }

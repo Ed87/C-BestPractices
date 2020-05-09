@@ -6,7 +6,7 @@ namespace BestPractices.Common
     {
         static public string NotifyTalent(string talentName)
         {
-            var message = "talent" + talentName;
+            var message = "Notifying talent: " + talentName;
             Console.WriteLine(message);
             return message;
         }

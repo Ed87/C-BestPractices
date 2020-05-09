@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPractices", "BestPracti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsProject", "TestsProject\TestsProject.csproj", "{CC12EC8B-EB87-442C-8188-F3BBB0896325}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestPractices.Common", "BestPractices.Common\BestPractices.Common.csproj", "{C9920622-CE8A-4BEF-A090-49B4E7EDDEE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CC12EC8B-EB87-442C-8188-F3BBB0896325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC12EC8B-EB87-442C-8188-F3BBB0896325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC12EC8B-EB87-442C-8188-F3BBB0896325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9920622-CE8A-4BEF-A090-49B4E7EDDEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9920622-CE8A-4BEF-A090-49B4E7EDDEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9920622-CE8A-4BEF-A090-49B4E7EDDEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9920622-CE8A-4BEF-A090-49B4E7EDDEE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
