@@ -38,5 +38,31 @@ namespace BestPractices.Models
         {
             return "Actor";
         }
+
+
+        /// <summary>
+        /// Books actor and date not specified
+        /// </summary>
+        public string BookActor()
+        {
+            string details = "Actor will not book if" +
+                " they cause trouble";
+            return "Actor" + jobTitle + "Is Booked" + details;
+
+        }
+
+        /// <summary>
+        /// Books actor on specific date
+        /// </summary>
+        /// <param name="theDate"></param>
+        /// <returns></returns>
+        public string BookActor(string theDate)
+        {
+            string details = "Actor will not book if" +
+                " they cause trouble";
+            return "Actor" + jobTitle + "Is Booked on" + theDate + "."+ details;
+
+        }
+
     }
 }
