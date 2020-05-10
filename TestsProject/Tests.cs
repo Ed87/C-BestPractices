@@ -83,5 +83,23 @@ namespace TestsProject
             //Assert
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void TestFormattingOnSetterForActor()
+        {
+            //Arrange
+            string details = "Actor will not book if" +
+                " they cause trouble";
+            var actor = new Actor("Ed Tshuma   ");
+
+            var expected = "Actor Ed Tshuma is Booked" + ". " 
+                + details;
+
+            //Act
+            var result = actor.BookActor();
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }

@@ -13,11 +13,8 @@ namespace BestPractices.Models
             Console.WriteLine("An actor is born");      
         }
 
-        /// <summary>
-        /// (this) keyword invokes default constructor 
-        /// </summary>
-        /// <returns></returns>
-        public Actor(string jobTitle) : this ()
+      
+        public Actor(string jobTitle) 
         {
             JobTitle = jobTitle;
         }
@@ -26,7 +23,12 @@ namespace BestPractices.Models
         public string JobTitle
         {
             get { return jobTitle; }
-            set { jobTitle = value; }
+           
+            //value? to check its not null
+            set {
+                var formattedTitle = value?.Trim();
+                jobTitle = formattedTitle;
+            }
         }
 
 
