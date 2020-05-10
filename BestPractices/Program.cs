@@ -1,19 +1,30 @@
 ﻿using BestPractices.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BestPractices
 {
     class Program
     {
+        public const int ConstantVariable = 100;
+        public static readonly int ReadOnlyVariable = 0;
+
+        /// <summary>
+        /// ReadOnly variable can also be reassigned 
+        /// in a constructor
+        /// </summary>
+        static Program()
+        {
+            ReadOnlyVariable = 7; 
+        }
+
         static void Main(string[] args)
         {
-            var currentActor = new Actor();
+            //var currentActor = new Actor();
 
-            currentActor.GetOccupation();
+            //currentActor.GetOccupation();
+
+            Console.WriteLine(ReadOnlyVariable);
+            Console.WriteLine(ConstantVariable);
 
         }
     }
