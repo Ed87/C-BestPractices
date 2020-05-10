@@ -45,9 +45,8 @@ namespace BestPractices.Models
         /// </summary>
         public string BookActor()
         {
-            string details = "Actor will not book if" +
-                " they cause trouble";
-            return "Actor " + jobTitle + " is Booked" + details;
+          
+            return BookActor(string.Empty);
 
         }
 
@@ -60,8 +59,16 @@ namespace BestPractices.Models
         {
             string details = "Actor will not book if" +
                 " they cause trouble";
-            return "Actor " + jobTitle + " is Booked on " + theDate + "." + details;
-
+            string theActor = "Actor " + jobTitle + " is Booked";
+           
+            if (theDate != string.Empty)
+            {
+                return theActor + " on " + theDate + ". " + details;
+            }
+             else
+            {
+                return theActor + ". " + details;
+            }
         }
 
     }

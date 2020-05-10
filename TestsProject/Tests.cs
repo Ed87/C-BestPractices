@@ -75,7 +75,7 @@ namespace TestsProject
             var actor = new Actor("Ed Tshuma");
 
             var expected = "Actor Ed Tshuma is Booked on " + DateTime.Today.ToShortDateString()
-                + "." + details;
+                + ". " + details;
 
             //Act
             var result = actor.BookActor(DateTime.Today.ToShortDateString());
